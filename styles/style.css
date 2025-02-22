@@ -7,6 +7,18 @@
 body {
   padding: 0;
   margin: 0;
+
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
 header {
@@ -55,4 +67,28 @@ nav.header-nav ul li a {
 nav.header-nav ul li a:hover {
   color: #a9b5df;
   text-decoration: underline;
+}
+
+main {
+  background-color: #fff2f2;
+  padding: 40px 60px;
+}
+
+article#home {
+  display: flex;
+  gap: 100px;
+  padding-inline: 100px;
+}
+
+section.home-content {
+  align-self: center;
+}
+
+section.home-content h1 {
+  font-size: 3em;
+}
+
+aside.home-image img {
+  width: 280px;
+  border-radius: 20px;
 }
