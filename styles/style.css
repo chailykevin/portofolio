@@ -30,6 +30,7 @@ nav.header-nav {
   justify-content: space-between;
   align-items: center;
   padding: 4px 60px;
+  border-bottom: 2px solid black;
 }
 
 nav.header-nav .nav-logo {
@@ -71,13 +72,20 @@ nav.header-nav ul li a:hover {
 
 main {
   background-color: #fff2f2;
-  padding: 40px 60px;
+  padding: 0 60px;
+}
+
+main article {
+  /* border: 1px solid red; */
+  padding-block: 48px;
+  padding-inline: 100px;
+  margin-block: 20px;
+  box-shadow: 0 2px;
 }
 
 article#home {
   display: flex;
   gap: 100px;
-  padding-inline: 100px;
 }
 
 section.home-content {
