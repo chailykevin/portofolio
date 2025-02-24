@@ -21,8 +21,19 @@ h3 {
   margin: 0;
 }
 
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+}
+
 header {
   background-color: #fff2f2;
+  display: inline;
+  position: sticky;
+  top: 0;
 }
 
 nav.header-nav {
@@ -34,7 +45,7 @@ nav.header-nav {
 }
 
 nav.header-nav .nav-logo {
-  background-color: #a9b5df;
+  background-color: #2d336b;
   padding: 8px;
   border-radius: 100%;
   border: 2px solid transparent;
@@ -46,8 +57,8 @@ nav.header-nav .nav-logo {
 
 nav.header-nav .nav-logo:hover {
   background-color: #fff2f2;
-  color: #a9b5df;
-  border-color: #a9b5df;
+  color: #2d336b;
+  border-color: #2d336b;
 }
 
 nav.header-nav ul {
@@ -76,7 +87,6 @@ main {
 }
 
 main article {
-  /* border: 1px solid red; */
   padding-block: 48px;
   padding-inline: 100px;
   margin-block: 20px;
@@ -106,31 +116,93 @@ section.home-content ul {
 section.home-content ul li {
   width: 40px;
   height: 40px;
-  background-color: #a9b5df;
+  background-color: #2d336b;
   border-radius: 50%;
   border: 2px solid transparent;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: all 0.15s ease-in-out;
 }
 
 section.home-content ul li:hover {
   background-color: #fff2f2;
-  border-color: #a9b5df;
+  border-color: #2d336b;
 }
 
 section.home-content ul li a i {
   font-size: 24px;
   color: #fff2f2;
   padding: 8px;
+
+  transition: all 0.15s ease-in-out;
 }
 
 section.home-content ul li a i:hover {
-  color: #a9b5df;
+  color: #2d336b;
 }
 
 aside.home-image img {
   width: 280px;
   border-radius: 20px;
+}
+
+article#about {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+div#about-content {
+  display: flex;
+  gap: 16px;
+}
+
+section#about-speciality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#speciality ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  padding: 0;
+}
+
+div#speciality ul li {
+  background-color: #2d336b;
+  color: #fff2f2;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  border: 2px solid transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+div#speciality ul li:hover {
+  background-color: #fff2f2;
+  border-color: #2d336b;
+}
+
+div#speciality ul li i {
+  font-size: 24px;
+  color: #fff2f2;
+  padding: 8px;
+
+  transition: all 0.15s ease-in-out;
+}
+
+div#speciality ul li i:hover {
+  color: #2d336b;
 }
