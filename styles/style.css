@@ -87,10 +87,11 @@ main {
 }
 
 main article {
-  padding-block: 48px;
+  padding-block: 48px 68px;
   padding-inline: 100px;
   margin-block: 20px;
   box-shadow: 0 2px;
+  /* border-top: 2px solid black; */
 }
 
 article#home {
@@ -205,4 +206,74 @@ div#speciality ul li i {
 
 div#speciality ul li i:hover {
   color: #2d336b;
+}
+
+article#portofolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+div#portos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+div.portoCard {
+  background-color: #2d336b;
+  border: 1px solid #2d336b;
+  padding: 12px;
+  border-radius: 3%;
+  color: #fff2f2;
+}
+
+div.portoCard-image {
+  width: 288px;
+  height: 162px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff2f2;
+  border-radius: 15px;
+}
+
+div.portoCard-image img {
+  height: 60px;
+}
+
+div.portoCard-content {
+  display: flex;
+  flex-direction: column;
+}
+
+div.portoCard-content h3 {
+  font-size: 1.2em;
+  padding-top: 8px;
+}
+
+div.portoCard-content p {
+  font-size: 1em;
+  margin-block: 8px;
+}
+
+div.portoCard-content a {
+  text-decoration: none;
+  color: #2d336b;
+  background-color: #fff2f2;
+  padding: 8px 12px;
+  width: max-content;
+  border-radius: 16px;
+  font-size: 1em;
+  font-weight: bold;
+  border: 2px solid #2d336b;
+
+  transition: all 0.2s ease-in-out;
+}
+
+div.portoCard-content a:hover {
+  color: #fff2f2;
+  background-color: #2d336b;
+  border-color: #fff2f2;
 }
