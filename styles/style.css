@@ -283,3 +283,59 @@ div.portoCard-content a:hover {
   background-color: #2d336b;
   border-color: #fff2f2;
 }
+
+article#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* background-color: red; */
+}
+
+article#contact h2 {
+  margin-bottom: 16px;
+}
+
+div.inputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+div.inputBox label {
+  margin-bottom: 4px;
+}
+
+div.inputBox input,
+div.inputBox textarea {
+  padding: 8px 8px;
+  margin-bottom: 16px;
+  width: 600px;
+  border-radius: 4px;
+  border: 1.4px solid black;
+
+  background-color: #fff2f2;
+}
+
+div.inputBox textarea {
+  max-width: 600px;
+  min-width: 600px;
+}
+
+button {
+  width: max-content;
+  padding: 8px 24px;
+  background-color: #2d336b;
+  border-radius: 8px;
+  color: #fff2f2;
+  font-weight: bold;
+  border: 2px solid transparent;
+
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #2d336b;
+  background-color: #fff2f2;
+  border-color: black;
+}

@@ -139,21 +139,39 @@
             </div>
           </div>
         </article>
-        <section id="contact">
+        <article id="contact">
           <h2>Contact Me!</h2>
           <form>
-            <label for="name">Your name:</label>
-            <input type="text" id="name" name="name" />
-            <br />
-            <label for="email">Your email:</label>
-            <input type="email" id="email" name="email" />
-            <br />
-            <label for="message">Your message:</label>
-            <textarea name="message" id="message"></textarea>
-            <br />
+            <div class="inputBox">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="inputBox">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email"
+              />
+            </div>
+            <div class="inputBox">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+
             <button>Send</button>
           </form>
-        </section>
+        </article>
       </div>
     </main>
     <footer>
