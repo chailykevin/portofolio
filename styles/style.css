@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 body {
   padding: 0;
   margin: 0;
 
-  height: 100vh;
+  height: auto;
   font-family: "Roboto", sans-serif;
 
   display: flex;
@@ -32,6 +37,7 @@ p {
 header {
   background-color: #fff2f2;
   display: inline;
+  z-index: 100;
   position: sticky;
   top: 0;
 }
