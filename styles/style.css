@@ -339,3 +339,18 @@ button:hover {
   background-color: #fff2f2;
   border-color: black;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 20px;
+
+  background-color: #fff2f2;
+}
+
+footer p {
+  font-size: 1em;
+  font-weight: bold;
+}
