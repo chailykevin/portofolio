@@ -21,6 +21,9 @@
       src="https://kit.fontawesome.com/1ffcc29cb8.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Javascript -->
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -33,6 +36,24 @@
           <li><a href="#about">About</a></li>
           <li><a href="#portofolio">Portofolio</a></li>
           <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="hamburger-logo">
+          <i
+            class="fa-solid fa-bars"
+            id="hamburger"
+            onclick="setActive()"
+            class="a"
+          ></i>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <ul>
+          <li><a href="#home" onclick="toggleNavbar(false)">Home</a></li>
+          <li><a href="#about" onclick="toggleNavbar(false)">About</a></li>
+          <li>
+            <a href="#portofolio" onclick="toggleNavbar(false)">Portofolio</a>
+          </li>
+          <li><a href="#contact" onclick="toggleNavbar(false)">Contact</a></li>
         </ul>
       </nav>
     </header>

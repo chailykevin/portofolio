@@ -40,6 +40,8 @@ header {
   z-index: 100;
   position: sticky;
   top: 0;
+
+  height: 60px;
 }
 
 nav.header-nav {
@@ -48,6 +50,8 @@ nav.header-nav {
   align-items: center;
   padding: 4px 60px;
   border-bottom: 2px solid black;
+
+  height: 100%;
 }
 
 nav.header-nav .nav-logo {
@@ -83,6 +87,70 @@ nav.header-nav ul li a {
 }
 
 nav.header-nav ul li a:hover {
+  color: #a9b5df;
+  text-decoration: underline;
+}
+
+nav.header-nav div#hamburger-logo {
+  display: none;
+  align-items: center;
+
+  background-color: #fff2f2;
+  padding: 8px;
+  border-radius: 100%;
+  border: 2px solid #2d336b;
+  color: #2d336b;
+
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  height: 40px;
+}
+
+nav.header-nav div#hamburger-logo:hover {
+  background-color: #2d336b;
+  color: #fff2f2;
+  border-color: transparent;
+}
+
+i#hamburger {
+  width: 20px;
+  text-align: center;
+}
+
+nav#hamburger-nav {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  width: 100%;
+
+  background-color: #fff2f2;
+}
+
+nav#hamburger-nav ul {
+  flex: 1;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav#hamburger-nav ul li {
+  border-bottom: 2px solid black;
+  padding-block: 20px;
+}
+
+nav#hamburger-nav ul li a {
+  text-decoration: none;
+  color: #2d336b;
+  font-weight: bold;
+  font-size: 1.05em;
+
+  transition: all 0.1s ease-in-out;
+}
+
+nav#hamburger-nav ul li a:hover {
   color: #a9b5df;
   text-decoration: underline;
 }
@@ -441,8 +509,17 @@ footer p {
 
   div.inputBox input,
   div.inputBox textarea {
-    /* min-width: 500px; */
     min-width: 100%;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  nav.header-nav ul {
+    display: none;
+  }
+
+  nav.header-nav div#hamburger-logo {
+    display: flex;
   }
 }
