@@ -370,7 +370,7 @@ article#contact {
 article#contact form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 60%;
   /* justify-content: center; */
   align-items: center;
 }
@@ -475,6 +475,10 @@ footer p {
   div.portoCard-image {
     width: 256px;
     height: 144px;
+  }
+
+  article#contact form {
+    width: 90%;
   }
 }
 
