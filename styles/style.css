@@ -102,6 +102,7 @@ main article {
 
 article#home {
   display: flex;
+  align-items: center;
   gap: 100px;
 }
 
@@ -222,8 +223,9 @@ article#portofolio {
 }
 
 div#portos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
   gap: 24px;
 }
 
@@ -292,6 +294,14 @@ article#contact {
   /* background-color: red; */
 }
 
+article#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* justify-content: center; */
+  align-items: center;
+}
+
 article#contact h2 {
   margin-bottom: 16px;
 }
@@ -299,6 +309,8 @@ article#contact h2 {
 div.inputBox {
   display: flex;
   flex-direction: column;
+
+  width: 100%;
 }
 
 div.inputBox label {
@@ -309,7 +321,6 @@ div.inputBox input,
 div.inputBox textarea {
   padding: 8px 8px;
   margin-bottom: 16px;
-  width: 600px;
   border-radius: 4px;
   border: 1.4px solid black;
 
@@ -317,8 +328,10 @@ div.inputBox textarea {
 }
 
 div.inputBox textarea {
-  max-width: 600px;
-  min-width: 600px;
+  max-width: 100%;
+  min-width: 100%;
+
+  min-height: 60px;
 }
 
 button {
@@ -332,6 +345,8 @@ button {
 
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+
+  align-self: flex-start;
 }
 
 button:hover {
@@ -353,4 +368,81 @@ footer {
 footer p {
   font-size: 1em;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1280px) {
+  div#portos {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  article#home {
+    gap: 40px;
+  }
+
+  aside.home-image img {
+    width: 200px;
+    border-radius: 20px;
+  }
+
+  div.portoCard-image {
+    width: 256px;
+    height: 144px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main article {
+    padding-inline: 20px;
+  }
+
+  article#home {
+    flex-direction: column;
+  }
+
+  article#home aside {
+    order: -1;
+  }
+
+  aside.home-image img {
+    width: 280px;
+  }
+
+  div#about-content {
+    flex-direction: column;
+  }
+
+  p#top {
+    margin-bottom: 0;
+  }
+
+  p#bot {
+    margin-top: 0;
+  }
+
+  div.portoCard-image {
+    width: 320px;
+    height: 180px;
+  }
+
+  div.inputBox input,
+  div.inputBox textarea {
+    /* min-width: 500px; */
+    min-width: 100%;
+    width: 100%;
+  }
 }
