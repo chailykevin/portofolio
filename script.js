@@ -10,11 +10,25 @@ function setActive() {
 }
 
 function toggleNavbar(activeness) {
+  hamburgerLogo.classList.toggle("active");
   if (activeness) {
-    hamburgerLogo.classList.add("active");
     navbar.style.display = "block";
   } else {
-    hamburgerLogo.classList.remove("active");
     navbar.style.display = "none";
+  }
+}
+
+window.addEventListener("click", function (e) {
+  offNav(e);
+});
+
+window.addEventListener("resize", function(e) {
+  offNav(e);
+})
+
+function offNav(e) {
+  if (e.target != hamburgerLogo && e.target != navbar) {
+    navbar.style.display = "none";
+    hamburgerLogo.classList.remove("active");
   }
 }
