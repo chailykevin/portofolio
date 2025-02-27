@@ -32,6 +32,7 @@ h2 {
 
 p {
   font-size: 18px;
+  text-align: justify;
 }
 
 header {
@@ -234,6 +235,10 @@ article#about {
 div#about-content {
   display: flex;
   gap: 16px;
+}
+
+div#about-content p {
+  flex: 1;
 }
 
 section#about-speciality {
